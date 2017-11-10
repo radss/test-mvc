@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class HelloWorldController {  
     @RequestMapping("/hello")  
     public ModelAndView hello() {  
-        String message = "HELLO SPRING MVC HOW R U";  
+        String message = "hello this is test-mvc rep";  
         //zobrazí to co je v hellopage.jsp v promìnné message také zde výše
         return new ModelAndView("hellopage", "message", message);  
     }  
