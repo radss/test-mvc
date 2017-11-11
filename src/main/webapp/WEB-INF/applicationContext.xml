@@ -15,10 +15,7 @@
   <!-- nasledujici definice umoznuje autowire ve spring komponentach -->
   <context:annotation-config />
   <context:component-scan base-package="fajfr.test6" />
- <!--   <context:exclude-filter type="regex" expression="/fajfr./test6./components.*"/>
-  </context:component-scan> -->
   
-
 </beans>
 
   

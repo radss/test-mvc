@@ -15,7 +15,8 @@ public class HelloWorldController {
 	
     @RequestMapping("/hello")  
     public ModelAndView hello() throws Exception {  
-        String message = person.getName();//"hello this is test-mvc rep. Change";  
+        String message = person.getName() + " " + person.getSurname(); 
+        
         //zobrazí to co je v hellopage.jsp v promìnné message také zde výše
         return new ModelAndView("hellopage", "message", message);  
     }  

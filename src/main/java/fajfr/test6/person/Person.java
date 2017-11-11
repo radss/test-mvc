@@ -8,7 +8,9 @@ private String name;
 private String usrname;
 
 public Person(){
+	//setuju v konstruktoru
 	this.setName("Radek");
+	this.setSurname("Fajfr");
 }
 
 public String getName() {
@@ -19,11 +21,11 @@ public void setName(String name) {
 	this.name = name;
 }
 
-public String getUsrname() {
+public String getSurname() {
 	return usrname;
 }
 
-public void setUsrname(String usrname) {
+public void setSurname(String usrname) {
 	this.usrname = usrname;
 }
 

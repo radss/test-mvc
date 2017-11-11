@@ -20,17 +20,11 @@
  	<!-- Jaký context se má v rámci springu prohlídnout. Odkáže mě to na HelloWorldController.java
  	kde namapuju index.jsp jež mě odkáže na zobrazovací hellopage.jsp
  	 -->	 
-  		<context:component-scan  base-package="fajfr.test6" /> 
-  
-  
-  <!-- Zde definuju, že zobrazovací hellopage.jsp je v /WEB-INF/jsp/" -->
-  
+  <context:component-scan  base-package="fajfr.test6" /> 
+
+  <!-- Zde definuju, že zobrazovací hellopage.jsp je v /WEB-INF/jsp/" --> 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
         <property name="prefix" value="/WEB-INF/jsp/" />  
         <property name="suffix" value=".jsp" />  
     </bean>  
-   
- <!--  <mvc:resources mapping="/resources/**" location="/resources/" /> -->
-
-	
 </beans>  
