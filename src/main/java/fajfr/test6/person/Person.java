@@ -9,8 +9,8 @@ private String usrname;
 
 public Person(){
 	//setuju v konstruktoru
-	this.setName("Radek");
-	this.setSurname("Fajfr");
+	this.setName("Radek a Zuzanka");
+	this.setSurname("Fajfrovi");
 }
 
 public String getName() {

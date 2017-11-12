@@ -20,7 +20,27 @@
  	<!-- Jaký context se má v rámci springu prohlídnout. Odkáže mě to na HelloWorldController.java
  	kde namapuju index.jsp jež mě odkáže na zobrazovací hellopage.jsp
  	 -->	 
-  <context:component-scan  base-package="fajfr.test6" /> 
+  <context:component-scan  base-package="fajfr.test6" /> <!-- Nastaveni TILES3, kde je konfigurak a jak zachazet s preparerama pro jednotlive tile -->
+  
+  
+  <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+    <property name="definitions">
+      <list>
+        <value>/WEB-INF/tiles.xml</value>
+      </list>
+    </property>
+     
+    <!-- nasledujici nastaveni rika, ze v tiles.xml se preparery jednotlivych beanu budou nastavovat Springem (budou se muset pouzit jmena Spring beanu) -->
+    <property name="preparerFactoryClass" value="org.springframework.web.servlet.view.tiles3.SpringBeanPreparerFactory"/>
+  </bean>
+ 
+  <!-- View resolver pro TILES3, umoznuje pouzit TILES3 jako View --> 
+  <bean id="viewResolverTiles" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+    <property name="contentType" value="text/html;charset=UTF-8" />
+    <property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView"/>
+  </bean>
+  
+  
 
   <!-- Zde definuju, že zobrazovací hellopage.jsp je v /WEB-INF/jsp/" --> 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  

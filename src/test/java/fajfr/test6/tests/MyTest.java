@@ -1,5 +1,6 @@
 package fajfr.test6.tests;
 
+import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.context.annotation.Bean;
