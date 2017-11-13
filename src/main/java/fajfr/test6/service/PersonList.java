@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import fajfr.test6.person.Person;
 
-//@Component
+@Service
 public interface PersonList {
 	
 	public List<Person> getAllPerson();

@@ -7,7 +7,8 @@
   <body>
   
     <#list persons as person>
-      Student: ${person.name} <br/> 
+      Student name: ${person.name} <br/>
+      Student surname: ${person.surname} <br/>  
     </#list>
     
   </body>
