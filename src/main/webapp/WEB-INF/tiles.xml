@@ -3,9 +3,8 @@
 
 <tiles-definitions>
    
-  <definition name="index" template="/WEB-INF/fm/index.ftl" />
+   <!-- definuju, kde je .ftl šablona pro zobrazení uložena -->
   <definition name="demo1" template="/WEB-INF/fm/demo1.ftl" />
-  <definition name="demo2" template="/WEB-INF/fm/demo2.ftl" />
-  
+
   
 </tiles-definitions>

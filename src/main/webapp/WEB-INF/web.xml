@@ -25,8 +25,8 @@ Tento spring-servlet.xml mě pak dostanu na HelloWorldController.java -->
     <url-pattern>*.html</url-pattern>  
 </servlet-mapping>  
 
- <!-- Servlet pro funkci FreeMarkeru a jeho nastaveni. -->
-  <servlet>
+ <!-- Servlet pro funkci FreeMarkeru a jeho nastaveni. Toto musí být nastavené pro funkci freemarkeru -->
+<servlet>
     <servlet-name>freemarker</servlet-name>
     <servlet-class>freemarker.ext.servlet.FreemarkerServlet</servlet-class>
     <init-param>
@@ -59,4 +59,7 @@ Tento spring-servlet.xml mě pak dostanu na HelloWorldController.java -->
     <servlet-name>freemarker</servlet-name>
     <url-pattern>*.ftl</url-pattern>
   </servlet-mapping>
+ 
+  
+   
 </web-app>  
